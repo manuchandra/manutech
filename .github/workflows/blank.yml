@@ -8,7 +8,10 @@ on:
 # https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-cloud-providers#adding-permissions-settings
 permissions:
   id-token: write
-   steps:
+jobs:
+   npm-publish-setup:
+    runs-on: ubuntu-latest  
+    steps:
      - name: "Setup"
        uses: jfrog/setup-jfrog-cli@v4
        id: setup-jfrog
