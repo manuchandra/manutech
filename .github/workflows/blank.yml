@@ -36,4 +36,4 @@ jobs:
                      # View Token
             - name: View Token
               run: |
-                    curl -v -H "Authorization: Bearer $RESPONSE" https://hts2.jfrog.io/access/api/v2/tokens/me
+                    curl -v -H "Authorization: Bearer $RESPONSE" https://hts2.jfrog.io/access/api/v2/users/manu
