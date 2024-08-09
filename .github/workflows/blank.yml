@@ -36,4 +36,4 @@ jobs:
                     # View Token
             - name: View Token
               run: |
-                    curl -H "Authorization: Bearer $RESPONSE" https://hts2.jfrog.io/artifactory/api/storage/generic-local/gitlab-ci.yml
+                    curl -H "Authorization: Bearer $RESPONSE" -X GET https://hts2.jfrog.io/artifactory/api/storage/generic-local/gitlab-ci.yml
